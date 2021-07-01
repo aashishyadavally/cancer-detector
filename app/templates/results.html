@@ -3,120 +3,173 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="AI Camp, Covid Mask Detector">
+    <meta name="keywords" content="AI Cancer Detector, Results">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title>Results</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='nicepage.css') }}" media="screen">
-    <link rel="stylesheet" href="{{ url_for('static', filename='Results.css') }}" media="screen">
-    <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}" defer=""></script>
-    <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='nicepage.js') }}" defer=""></script>   
-    
-   
-    
+    <link rel="stylesheet" href="{{url_for('static', filename='nicepage.css')}}" media="screen">
+<link rel="stylesheet" href="{{url_for('static', filename='results.css')}}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{url_for('static', filename='jquery.js')}}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{url_for('static', filename='nicepage.js')}}" defer=""></script>
+    <meta name="generator" content="Nicepage 3.18.2, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+    
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "",
-		"url": "index.html",
-		"logo": "images/aicamplogo250.jpg"
+		"logo": "images/aicamplogo.webp"
 }</script>
+    <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Results">
     <meta property="og:type" content="website">
-    <meta name="theme-color" content="#478ac9">
-    <link rel="canonical" href="index.html">
-    <meta property="og:url" content="index.html">
   </head>
-  <body class="u-body"><header class="u-clearfix u-header u-header" id="sec-bd94"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <a href="{{ url_for('home') }}" class="u-image u-logo u-image-1">
-          <img src="{{ url_for('static', filename='images/aicamplogo250.jpg')}}" class="u-logo-image u-logo-image-1" data-image-width="64">
+  <body class="u-body"><header class="u-clearfix u-grey-80 u-header u-header" id="sec-628f"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="{{ url_for('home') }}" class="u-image u-logo u-image-1" data-image-width="216" data-image-height="220" title="AI Camp">
+          <img src="{{ url_for('static', filename='images/aicamplogo.webp')}}" class="u-logo-image u-logo-image-1" data-image-width="78.6738">
         </a>
         <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
-          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0;">
-            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-4-light-1 u-text-hover-palette-4-base u-text-palette-4-base" href="#" style="padding: 4px 0; font-size: calc(1em + 8px);">
-              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+<!--              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg> 
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
 </symbol>
-</defs></svg>
+</defs></svg> -->
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('home') }}" style="padding: 10px 20px;">Home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://www.ai-camp.org" target="_blank" style="padding: 10px 20px;">AI Camp</a>
+            <ul class="u-custom-font u-font-raleway u-nav u-spacing-20 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-nav-link u-text-active-custom-color-6 u-text-custom-color-6 u-text-hover-palette-5-light-3" href="{{ url_for('home') }}" data-page-id="838424502" style="padding: 10px;">Home</a>
+</li>
+<li class="u-nav-item"><a class="u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-nav-link u-text-active-custom-color-6 u-text-custom-color-6 u-text-hover-palette-5-light-3" href="{{url_for('about_us')}}" style="padding: 10px;">About Us</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://www.ai-camp.org" target="_blank" style="padding: 10px 20px;">Join AI Camp!</a>
 </li></ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-              <div class="u-menu-close"></div>
-              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('home') }}" style="padding: 10px 20px;">Home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://www.ai-camp.org" target="_blank" style="padding: 10px 20px;">AI Camp</a>
+              <div class="u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('home') }}" data-page-id="838424502" style="padding: 10px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('about_us')}}" style="padding: 10px;">About Us</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://www.ai-camp.org" target="_blank" style="padding: 10px 20px;">Join AI Camp!</a>
 </li></ul>
+              </div>
             </div>
             <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
           </div>
         </nav>
-      </div></header><strong></strong>
-    <section class="u-clearfix u-section-1" id="sec-8cf7">
+        <h1 class="u-custom-font u-font-raleway u-text u-text-1">AI Cancer Detector</h1>
+      </div></header>
+    <section class="u-align-center u-clearfix u-gradient u-section-1" id="carousel_2a75">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1 u-grey-5">
-          <div class="u-layout" style="">
-            <div class="u-layout-row" style="">
-              <div class="u-align-left u-container-style u-image u-layout-cell u-left-cell u-shading u-size-30 u-size-xs-60" style="background-image: url({{ url_for('files', filename=filename) }}); background-size: contain;" data-image-width="1280" data-image-height="913">
-                <div class="u-container-layout u-container-layout-1" src="">
-                </div>
-              </div>
-              <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-layout-cell-2">
-                <div class="u-container-layout u-valign-middle u-container-layout-2">
-                    <h3 class="mbr-section-title display-4">We found <strong><span style='text-transform: capitalize;'>{{labels}}!</span></strong></h3>
-
-                    {% if labels == 'no emotion' %}
-                    <div>We missed? See why below.</div>
-                    {% else %}
-                    <div class="lead"><em>with {{ confidences }} confidence.</em></div>
-                    {% endif %}
-                  <!--     button added for uploading a photo    -->
-                  <div class="mbr-buttons--left">
-                      <div class="mbr-section-btn">
-                          <a class="u-btn u-button-style u-palette-4-dark-2 u-btn-1" href='https://www.ai-camp.org'>
-                              Visit AI Camp and see how we did this
-                          </a>
-
-                      </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+<!-- Comment below div to remove blue rectangle box
+        <div class="u-expanded-height u-gradient u-shape u-shape-rectangle u-shape-1"></div> -->
+        <h2 class="u-custom-font u-font-raleway u-text u-text-1">Confusion Matrix</h2>
+        <img class="u-image u-image-1" style="margin-left:50px" src="{{ url_for('files', filename=filename) }}" data-image-width="216" data-image-height="220">
+        <div class="u-align-left u-container-style u-expanded-width-xs u-group u-image u-image-2" data-image-width="678" data-image-height="712">
+          <div class="u-container-layout u-container-layout-1"></div>
+        </div>
+<!-- Replaced u-white below with #ffffff00 to make circle transparent -->
+        <div class="u-hidden-xs u-shape u-shape-circle #ffffff00 u-shape-2"></div> 
+        <div class="u-container-style u-expanded-width-xs u-group u-radius-10 u-shape-round u-white u-group-2">
+          <div class="u-container-layout u-valign-top u-container-layout-2">
+            <h4 class="u-custom-font u-font-raleway u-text u-text-default-lg u-text-default-xl u-text-2">Why is it Wrong Sometimes?</h4>
+            <p class="u-custom-font u-font-raleway u-text u-text-3">
+              <span style="font-size: 1.25rem;">With only three weeks to build the project, we had time to fine-tune the YOLO-v4 model with a total of 500 images for both the labels. Given more time, additional data can be included, which will result in an improved overall performance.</span>
+            </p>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="u-clearfix u-grey-5 u-section-2" id="sec-9f54">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
-          <div class="u-layout" style="">
-            <div class="u-layout-row" style="">
-              <div class="u-container-style u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-layout-cell-1" src="">
-                <div class="u-container-layout u-container-layout-1">
-                  <h2 class="u-align-center u-text u-text-1">Why do we sometimes miss?</h2>
-                  <p class="u-align-center u-text u-text-2">Given just three weeks, we only had time to train our model with 2484 labeled images. If we have more time, we can improve our model performance!</p>
-                </div>
-              </div>
-              <div class="u-align-center u-container-style u-image u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-image-1" src="" data-image-width="1191" data-image-height="1280">
-                <div class="u-container-layout u-valign-middle u-container-layout-2" src=""></div>
-              </div>
-            </div>
+<!--        <h1 class="u-custom-font u-font-raleway u-text u-text-4">Results</h1>  -->
+        <h1 class="u-custom-font u-font-raleway u-text u-text-4"> </h1>
+        <div class="u-rotation-parent u-rotation-parent-1">
+          <div class="u-border-3 #ffffff00 u-hidden-md u-hidden-sm u-hidden-xs u-rotate-90 u-shape u-shape-svg #ffffff00 u-shape-3">
+            <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 140" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-5e2e"></use></svg> 
+            <svg class="u-svg-content" viewBox="-1.5 -1.5 163 143" x="0px" y="0px" id="svg-5e2e" style="enable-background:new 0 0 160 140;"><path d="M90,45H0v50h90v45l70-70L90,0V45z"></path></svg> -
           </div>
         </div>
-      </div>
-    </section>
-    
-    
-    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-533f"><div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-small-text u-text u-text-variant u-text-1">
-          <a href="https://www.ai-camp.org" class="u-btn u-button-style u-none u-text-palette-4-light-1 u-btn-1" target="_blank">AI Camp - everyone can learn AI</a>
+        <p class="u-custom-font u-font-raleway u-text u-text-5"> </p> 
+        <p class="u-custom-font u-font-raleway u-text u-text-6">
+
+          {% if labels == 'no objects' %}
+            <span style="font-size: 1.875rem;">
+              <br> We <strong>missed</strong>? See why below!
+            </span>
+            {% elif labels == 'metastatic-tissue' %}
+            <span style="font-size: 1.875rem;">
+              <br> We found <strong>metastatic</strong> cell tissue!
+            </span>
+            <span style="font-size: 1.35rem;">
+              <br><em> Predicted with {{ confidences }} confidence! </em>
+            </span>
+            {% elif labels == 'healthy' %}
+            <span style="font-size: 1.875rem;">
+              <br> We found <strong>healthy</strong> cell tissue!
+            </span>
+            <span style="font-size: 1.35rem;">
+              <br><em> Predicted with {{ confidences }} confidence! </em>
+            </span>
+
+            {% endif %}
+
+<!--              <br><em> Predicted with {{ confidences }} confidence! </em> -->
+            </span>
+            <br>
+          </span>
+          <br>
         </p>
+        <!--     button added for uploading a photo    -->
+        <div class="mbr-buttons--left">
+            <div class="mbr-section-btn">
+                <a class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-2-base u-radius-50 u-btn-1" href='#' id='seefood_button'>
+                    <form id='seefood_form' method=post enctype=multipart/form-data>
+                        <input id="seefood_input_field" name="file" type="file" onchange="this.form.submit();" hidden/>
+                    </form>
+                    DETECT ANOTHER
+                </a>
+
+            </div>
+        </div>
+  
+<!--        <a href="https://nicepage.com/c/technology-website-templates" class="u-btn u-btn-round u-button-style u-hover-palette-4-dark-1 u-palette-2-base u-radius-50 u-btn-1">DETECT ANOTHER</a> -->
+      </div>
+    </section>
+
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-f6ba"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1"><b style="">DISCLAIMER: THIS IS ONLY A SUPPLEMENTARY TOOL AND IN NO WAY CONSTITUTES MEDICAL ADVICE. IF YOU FOR ANY REASON BELIEVE YOU HAVE CANCER, SEEK A MEDICAL PROFESSIONAL.</b>
+          <br>
+          <a href="https://www.ai-camp.org/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">https://www.ai-camp.org/<br>
+          </a><b>&copy 2021</b>
+        </p>
+        <a href="https://www.ai-camp.org" class="u-image u-logo u-image-1" data-image-width="150" data-image-height="150">
+          <img src="{{ url_for('static', filename='images/aicamplogo.webp')}}" class="u-logo-image u-logo-image-1" data-image-width="74.5265">
+        </a>
       </div></footer>
 
+      <!--     javascript added for uploading a photo    -->
+    <script>
+        // added to get upload with a button working
+        document.getElementById('seefood_button').addEventListener('click', openDialog);
+
+        function openDialog() {
+            document.getElementById('seefood_input_field').click();
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#spinner").bind("ajaxSend", function() {
+                $(this).show();
+            }).bind("ajaxStop", function() {
+                $(this).hide();
+            }).bind("ajaxError", function() {
+                $(this).hide();
+            });
+            // seefood_input_field
+            $('#seefood_button').click(function() {
+
+            });
+
+        });
+    </script>
   </body>
 </html>
